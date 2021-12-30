@@ -338,8 +338,8 @@
 }
 
 .top-ribbon img {
-  width: 232px;
-  height: 64px;
+  width: 168px;
+  height: auto;
 }
 
 header {
@@ -348,6 +348,10 @@ header {
   width: 100%;
   height: 568px;
   background-size: contain;
+}
+
+header .background-mobile {
+  display: none;
 }
 
 header .row-grid {
@@ -490,7 +494,7 @@ header a {
 }
 
 .section-wanna-hear a {
-  padding: 22px 45px;
+  padding: 22px 30px;
 }
 
 .section-check-out {
@@ -534,10 +538,17 @@ header a {
   font-weight: 500;
   line-height: 24px;
   color: #b1d8f8;
+  display: flex;
+  align-items: center;
 }
 
+.section-erin-will .instagram img {
+  margin-right: 10px
+}
+
+
 .section-erin-will .subtitle {
-  font-family: var(--fon_montserrat_regular);
+  font-family: var(--fon_montserrat_semibold);
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -670,12 +681,16 @@ input {
 
 .section-challenge-january a {
   border: 1px solid #0d66fc;
-  padding: 22px 65px;
+  padding: 22px 30px;
   color: #0d66fc !important;
 }
 
 .section-brands .row-grid {
   justify-content: space-around;
+}
+
+.brands-mobile {
+  display: none;
 }
 
 footer {
@@ -709,7 +724,11 @@ footer ul {
 }
 
 footer ul li {
-  margin-right: 30px;
+  margin-right: 40px;
+}
+
+footer .logo-footer {
+  width: 113px;
 }
 
 footer ul li a {
@@ -720,7 +739,19 @@ footer ul li a {
   display: none;
 }
 
+.show-mobile {
+  display: none;
+}
+
 @media (max-width: 800px) {
+
+  .show-desktop {
+    display: none;
+  }
+
+  .show-mobile {
+    display: block;
+  }
 
   header {
     background-image: none;
@@ -763,6 +794,7 @@ footer ul li a {
   header .background-mobile {
     padding: 0 !important;
     margin-top: 20px;
+    display: block;
   }
 
   header .background-mobile img {
@@ -922,8 +954,12 @@ footer ul li a {
     line-height: 28px !important;
   }
 
-  .section-erin-will  img{
+  .section-erin-will .show-mobile{
     width: 100%;
+  }
+
+  .section-erin-will .content-erin {
+    margin-top: 30px;
   }
   
   .section-erin-will .wrapper-container {
@@ -1001,6 +1037,9 @@ footer ul li a {
   .section-brands {
     display: none;
   }
+  .brands-mobile {
+    display: block;
+  }
 
   .brands-mobile .side-1 {
     display: flex;
@@ -1016,5 +1055,9 @@ footer ul li a {
   footer {
     height: auto !important;
     text-align: center;
+  }
+
+  footer .logo-footer {
+    width: 132px;
   }
 }
