@@ -1,15 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link rel="stylesheet" href="./erin_css.css">
-    <title>Erin Page</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
-</head>
 
 <body>
     <div id="erin_page_uniqueid">
@@ -36,7 +30,7 @@
                                 prizes
                             </h1>
                         </div>
-                        <div class="content-btn show-desktop text-center">
+                        <div class="content-btn show-desktop">
                             <a href="">Sign up now</a>
                         </div>
                         <div class="content-btn show-mobile">
@@ -211,7 +205,7 @@
                         <div class="col-grid-6 text-center">
                             <div class="card">
                                 <p>
-                                    A new, exclusive in-app program for beginners and returning challengers!
+                                    A new, exclusive in-app program for beginnings and returning challengers!
                                 </p>
                             </div>
                         </div>
@@ -349,8 +343,7 @@
                             <h3>Wanna hear the best part?</h3>
                         </div>
                         <div>
-                            <p class="variant-4"> Join Erin’s Winter Warrior Challenge for <s>$49.99</s> $0.99 today!
-                                That’s
+                            <p class="variant-4"> Join Erin’s Winter Warrior Challenge for <s>$49.99</s> $0.99 today! That’s
                                 close to $50 in
                                 savings! What are you waiting for? Click now!</p>
                         </div>
@@ -367,8 +360,7 @@
                 <div class="row-grid text-center">
                     <div class="col-grid-12 text-center">
                         <div>
-                            <h2 class="variant-3 show-desktop">Check out these participants of my previous challenges!
-                            </h2>
+                            <h2 class="variant-3 show-desktop">Check out these participants of my previous challenges!</h2>
                             <h2 class="variant-3 show-mobile">Still on the fence?
                                 Check out these participants of my previous challenges!</h2>
                         </div>
@@ -388,45 +380,20 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-1">
+            <div style="margin-top: 40px;" class="show-desktop">
                 <div>
-                    <img src="https://via.placeholder.com/350x200" alt="">
+                    <img src="./images/erin_images/pics-line-1.png" width="100%" alt="">
                 </div>
                 <div>
-                    <img src="https://via.placeholder.com/350x200" alt="">
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/350x200" alt="">
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/350x200" alt="">
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/350x200" alt="">
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/350x200" alt="">
+                    <img src="./images/erin_images/pics-line-2.png" width="100%" alt="">
                 </div>
             </div>
-
-            <div class="carousel-2">
+            <div style="margin-top: 20px;" class="show-mobile">
                 <div>
-                    <img src="https://via.placeholder.com/350x200" alt="">
+                    <img src="./images/erin_images/pics-line-3.png" width="100%" alt="">
                 </div>
                 <div>
-                    <img src="https://via.placeholder.com/350x200" alt="">
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/350x200" alt="">
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/350x200" alt="">
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/350x200" alt="">
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/350x200" alt="">
+                    <img src="./images/erin_images/pics-line-4.png" width="100%" alt="">
                 </div>
             </div>
         </section>
@@ -522,8 +489,7 @@
                             </div>
                             <div class="tab">
                                 <input type="checkbox" id="chck2">
-                                <label class="tab-label" for="chck2">I don't have a gym membership. Can I still do this
-                                    challenge from home?</label>
+                                <label class="tab-label" for="chck2">I don't have a gym membership. Can I still do this challenge from home?</label>
                                 <div class="tab-content">
                                     <p>
                                         Of course! The challenge workouts don’t need a lot of equipment, so you can
@@ -537,7 +503,7 @@
                                 <label class="tab-label" for="chck3">What equipment do I need?</label>
                                 <div class="tab-content">
                                     <p>
-                                        To get the most out of the program, please make sure you have
+                                        To get the most out of the program, please make you have:
                                     </p>
                                     <ul>
                                         <li>
@@ -826,85 +792,7 @@
             </div>
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/flipdown.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
 
-            // Unix timestamp (in seconds) to count down to
-            var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1;
-
-            // Set up FlipDown
-            var flipdown = new FlipDown(1641816000)
-
-                // Start the countdown
-                .start()
-
-                // Do something when the countdown ends
-                .ifEnded(() => {
-                    console.log('The countdown has ended!');
-                });
-
-            var ver = document.getElementById('ver');
-            ver.innerHTML = flipdown.version;
-        });
-
-        $(".carousel-1").slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            dots: false,
-            arrows: false,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            centerMode: true,
-            responsive: [
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        })
-
-        $(".carousel-2").slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            dots: false,
-            arrows: false,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            centerMode: true,
-            responsive: [
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        })
-
-    </script>
+    <script src="./js/main.js"></script>
 
 </body>
-
-</html>
